@@ -32,6 +32,7 @@ jobs:
 
       - name: Build Web Assets
         run: |
+          npm install
           npm run build
           mkdir -p dist
 
