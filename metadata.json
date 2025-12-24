@@ -1,0 +1,8 @@
+{
+  "name": "PashuCare AI",
+  "description": "A comprehensive AI-powered livestock management assistant offering breed identification, disease diagnosis, feed calculation, and farming guides in English and Urdu.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
