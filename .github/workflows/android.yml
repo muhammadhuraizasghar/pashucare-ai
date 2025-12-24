@@ -39,12 +39,14 @@ jobs:
       - name: Capacitor Sync
         run: |
           npx cap sync android
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
 
       - name: Build APK (Debug)
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --no-daemon
 
       - name: Build AAB (Release)
         run: |
